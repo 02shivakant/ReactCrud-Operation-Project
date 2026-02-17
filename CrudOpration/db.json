@@ -1,0 +1,24 @@
+{
+  "voters": [
+    {
+      "VoterId": 2345,
+      "Name": "Mayank",
+      "Age": 34,
+      "Gender": "Male"
+    },
+    {
+      "id": "4508",
+      "VoterId": "223",
+      "Name": "Shivakant Pandey",
+      "Age": 34,
+      "Gender": "male"
+    },
+    {
+      "id": "e4c4",
+      "VoterId": "34",
+      "Name": "vikrant",
+      "Age": 23,
+      "Gender": "male"
+    }
+  ]
+}

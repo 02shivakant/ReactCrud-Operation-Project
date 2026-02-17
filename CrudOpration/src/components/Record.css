@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.record-card {
+  width: 90%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #6b3fa0;
+}
+
+
+.Voterrecord{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+ 
+}
+
+
+
+.record-header h2 {
+  color: #5b2c83;
+}
+
+/* ===== Add Voter Button ===== */
+.add-btn {
+  background-color: #5b2c83;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #4a236b;
+}
+
+/* ===== Table Styling ===== */
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Head */
+.record-table thead {
+  background-color: #6b3fa0;
+}
+
+.record-table th {
+  padding: 12px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Table Body */
+.record-table tbody tr {
+  background-color: #f2f0f3;
+  border-bottom: 1px solid #ddd;
+}
+
+.record-table td {
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* ===== Anchor Buttons (View/Edit/Delete) ===== */
+.table-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 6px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
+
+.view-btn {
+  background-color: #4fd1c5;
+}
+
+.edit-btn {
+  background-color: #a3a3a3;
+}
+
+.delete-btn {
+  background-color: #d1d1d1;
+}
+
+/* Hover Effect */
+.table-btn:hover {
+  opacity: 0.85;
+}
