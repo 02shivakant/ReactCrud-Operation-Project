@@ -1,13 +1,12 @@
-import { useState } from 'react'
 import { BrowserRouter, Route,Routes } from "react-router-dom";
-import './App.css'
+import './App.css';
 import VoterRecord from './components/VoterRecord';
 import ViewDetails from './components/ViewDetails';
 import AddVoter from './components/AddVoter';
 import EditVoter from './components/EditVoter';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -15,9 +14,9 @@ function App() {
       
         <Routes>
           <Route path='/' element={<VoterRecord/>}></Route>
-          <Route path='/details/:Voterid' element={<ViewDetails/>}></Route>
-          <Route path='/add/:Voterid' element={<AddVoter/>}></Route>
-          <Route path='/edit/:Voterid' element={<EditVoter/>}></Route>
+          <Route path='/details/:id' element={<ViewDetails/>}></Route>
+          <Route path='/add/:VoterId' element={<AddVoter/>}></Route>
+          <Route path='/edit/:VoterId' element={<EditVoter/>}></Route>
 
         </Routes>
       

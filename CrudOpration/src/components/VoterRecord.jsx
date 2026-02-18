@@ -3,10 +3,10 @@ import { Link, useNavigate} from "react-router-dom";
 import './Record.css';
 
 const VoterRecord = () => {
-     const [voters , setVoters] = useState("");
+     const [voters , setVoters] = useState([]);
      const navigate= useNavigate();
-    const ShowDetails = (VoterId) =>{
-        navigate("/details/:Voterid" + VoterId);
+    const ShowDetails = (id) =>{
+        navigate(`/details/${id}`);
     }
     useEffect(()=>{
         fetch("http://localhost:3001/voters")
@@ -43,7 +43,7 @@ const VoterRecord = () => {
                                 <td> {voters.Age} </td>
                                 <td> {voters.Gender} </td>
                                 <td>
-                                    <button onMouseDown={() => ShowDetails(voters.VoterId)} href="" className='table-btn view-btn'>View</button>
+                                    <button onClick={() => ShowDetails(voters.id)} href="" className='table-btn view-btn'>View</button>
                                     <button href="" className='table-btn edit-btn'>Edit</button>
                                     <button href="" className='table-btn delete-btn'>Delete</button>
                                 </td>
